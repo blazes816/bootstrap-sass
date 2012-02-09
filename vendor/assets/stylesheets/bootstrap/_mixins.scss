@@ -176,6 +176,9 @@
 @mixin fluidGridSystemColumns($fluidGridGutterWidth, $fluidGridColumnWidth, $columns) {
   width: ($fluidGridColumnWidth * $columns) + ($fluidGridGutterWidth * ($columns - 1));
 } 
+@mixin fluidGridSystemOffset($fluidGridColumnWidth, $fluidGridGutterWidth, $columns) {
+  margin-left: ($fluidGridColumnWidth * $columns) + ($fluidGridGutterWidth * ($columns - 1)) + ($fluidGridGutterWidth * 2);
+}
 @mixin fluidGridSystemGridColumn($fluidGridGutterWidth) {
   float: left;
   margin-left: $fluidGridGutterWidth;
